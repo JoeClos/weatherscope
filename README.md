@@ -1,4 +1,4 @@
-# ⛅ WeatherScope
+# WeatherScope
 
 ![Angular](https://img.shields.io/badge/Angular-15-red?logo=angular&logoColor=white)
 ![Leaflet](https://img.shields.io/badge/Leaflet-Map-green?logo=leaflet&logoColor=white)
@@ -10,7 +10,7 @@
 
 ---
 
-## 🚀 Features
+##  Features
 
 🌐 **City Search with Autocomplete** – Get accurate suggestions as you type  
 📍 **Use My Location** – Fetch weather using your current geolocation  
@@ -85,5 +85,5 @@ This project was created as a learning journey into:
 ## 👩‍💻 Author
 
 Made with 💙 by [Your Name]  
-> Find me on [LinkedIn](https://linkedin.com/in/your-profile) • [GitHub](https://github.com/your-username)
+> Find me on [LinkedIn](https://www.linkedin.com/in/josephine-closan/) • [GitHub](https://github.com/JoeClos)
 
