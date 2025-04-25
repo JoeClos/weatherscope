@@ -37,7 +37,7 @@
 
 ### 🔄 Clone the repo
 ```bash
-git clone https://github.com/your-username/weatherscope.git
+git clone https://github.com/JoeClos/weatherscope.git
 cd weatherscope
 ```
 
