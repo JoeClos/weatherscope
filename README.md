@@ -4,7 +4,7 @@
 ![Leaflet](https://img.shields.io/badge/Leaflet-Map-green?logo=leaflet&logoColor=white)
 ![OpenWeather](https://img.shields.io/badge/API-OpenWeather-blue?logo=openweathermap&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-[![Live Preview](https://img.shields.io/badge/Live-Preview-blue?logo=vercel)](https://your-deployment-url.com)
+<!--[![Live Preview](https://img.shields.io/badge/Live-Preview-blue?logo=vercel)](https://your-deployment-url.com) --- -->
 
 > A smart and responsive weather application built with **Angular**, integrating **OpenWeatherMap API** and **Leaflet.js** to display real-time weather data and interactive maps.
 
@@ -23,7 +23,7 @@
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Angular** (v15)
 - **Angular Material**
@@ -33,20 +33,20 @@
 
 ---
 
-## 🧪 Getting Started
+## Getting Started
 
-### 🔄 Clone the repo
+### Clone the repo
 ```bash
 git clone https://github.com/JoeClos/weatherscope.git
 cd weatherscope
 ```
 
-### 📦 Install dependencies
+### Install dependencies
 ```bash
 npm install
 ```
 
-### 🔐 Set up environment variables
+### Set up environment variables
 Create `src/environments/environment.ts` file with your API keys:
 ```ts
 export const environment = {
@@ -57,7 +57,7 @@ export const environment = {
 };
 ```
 
-### ▶️ Run the app locally
+### Run the app locally
 ```bash
 ng serve
 ```
@@ -71,7 +71,7 @@ _Screenshots here once your the is deployed or styled._
 
 --- -->
 
-## 💡 Inspiration & Purpose
+## Inspiration & Purpose
 
 This project was created as a learning journey into:
 
@@ -82,7 +82,7 @@ This project was created as a learning journey into:
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 Made with 💙 by [Your Name]  
 > Find me on [LinkedIn](https://www.linkedin.com/in/josephine-closan/) • [GitHub](https://github.com/JoeClos)
