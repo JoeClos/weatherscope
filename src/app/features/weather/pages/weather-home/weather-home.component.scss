@@ -1,0 +1,86 @@
+.page-wrapper {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+// .map-container {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+//   z-index: 0;
+// }
+
+.floating-controls {
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 1000;
+  width: 90%;
+  max-width: 400px;
+}
+
+.search-input {
+  width: 100%;
+}
+
+.location-button {
+  align-self: flex-start;
+}
+
+.weather-info {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 90%;
+  max-width: 500px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.weather-info h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+.weather-details mat-icon {
+  color: #3CA8E0;
+  vertical-align: middle;
+  margin-right: 0.3rem;
+  font-size: 20px;
+}
+
+.location-button mat-icon {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.map-helper-text {
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #666;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+

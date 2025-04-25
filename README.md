@@ -1,27 +1,89 @@
-# WeatherApp
+# ⛅ WeatherScope
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+![Angular](https://img.shields.io/badge/Angular-15-red?logo=angular&logoColor=white)
+![Leaflet](https://img.shields.io/badge/Leaflet-Map-green?logo=leaflet&logoColor=white)
+![OpenWeather](https://img.shields.io/badge/API-OpenWeather-blue?logo=openweathermap&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![Live Preview](https://img.shields.io/badge/Live-Preview-blue?logo=vercel)](https://your-deployment-url.com)
 
-## Development server
+> A smart and responsive weather application built with **Angular**, integrating **OpenWeatherMap API** and **Leaflet.js** to display real-time weather data and interactive maps.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🚀 Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+🌐 **City Search with Autocomplete** – Get accurate suggestions as you type  
+📍 **Use My Location** – Fetch weather using your current geolocation  
+🗺️ **Interactive Map** – Visualize weather locations on Leaflet-powered maps  
+🧭 **Fallback View** – Graceful default map display if geolocation is blocked  
+🌡️ **Live Weather Details** – Temperature, humidity, wind, and weather condition  
+🎞️ **Animated Weather Icons** – Rich animations powered by Lottie  
+🔔 **Snackbars for Feedback** – User-friendly notifications for denied location or errors  
+📱 **Responsive UI** – Works great on desktop and mobile
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠️ Tech Stack
 
-## Running unit tests
+- **Angular** (v15)
+- **Angular Material**
+- **Leaflet.js** (with OpenStreetMap tiles)
+- **Lottie/ngx-lottie** for animated weather icons
+- **OpenWeatherMap API** – [https://openweathermap.org/api](https://openweathermap.org/api)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🧪 Getting Started
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 🔄 Clone the repo
+```bash
+git clone https://github.com/your-username/weatherscope.git
+cd weatherscope
+```
 
-## Further help
+### 📦 Install dependencies
+```bash
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 🔐 Set up environment variables
+Create `src/environments/environment.ts` file with your API keys:
+```ts
+export const environment = {
+  production: false,
+  openWeatherApiKey: 'YOUR_API_KEY',
+  openWeatherGeoUrl: 'https://api.openweathermap.org/geo/1.0',
+  openWeatherBaseUrl: 'https://api.openweathermap.org/data/2.5/weather',
+};
+```
+
+### ▶️ Run the app locally
+```bash
+ng serve
+```
+Visit: [http://localhost:4200](http://localhost:4200)
+
+---
+
+<!-- ## 📸 Screenshots
+
+_Screenshots here once your the is deployed or styled._
+
+--- -->
+
+## 💡 Inspiration & Purpose
+
+This project was created as a learning journey into:
+
+- Using **HTTPClient** in Angular
+- Building **responsive layouts** with Angular Material
+- Handling APIs, geolocation, and map rendering
+- Writing clean, modular, and intuitive Angular code
+
+---
+
+## 👩‍💻 Author
+
+Made with 💙 by [Your Name]  
+> Find me on [LinkedIn](https://linkedin.com/in/your-profile) • [GitHub](https://github.com/your-username)
+

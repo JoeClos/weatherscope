@@ -1,0 +1,77 @@
+<div class="page-wrapper">
+  <!-- Map in background -->
+  <app-map-view
+    [latitude]="weatherData?.coord?.lat || defaultLat"
+    [longitude]="weatherData?.coord?.lon || defaultLon"
+    [showMarker]="showMarker"
+  ></app-map-view>
+
+  <!-- Floating Search Card -->
+  <div class="floating-controls">
+    <mat-form-field appearance="fill" class="search-input">
+      <mat-label>Enter city</mat-label>
+      <input
+        type="text"
+        matInput
+        [(ngModel)]="cityInput"
+        [matAutocomplete]="auto"
+        (ngModelChange)="onCityInputChange()"
+      />
+      <button
+        *ngIf="cityInput"
+        matSuffix
+        mat-icon-button
+        aria-label="Clear"
+        (click)="clearInput()"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+      <mat-autocomplete
+        #auto="matAutocomplete"
+        (optionSelected)="onCitySelected($event)"
+      >
+        <mat-option
+          *ngFor="let location of cityOptions"
+          [value]="getLabel(location)"
+        >
+          {{ getLabel(location) }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+
+    <button
+      mat-stroked-button
+      color="primary"
+      class="location-button"
+      (click)="useMyLocation()"
+    >
+      <mat-icon>my_location</mat-icon> Use My Location
+    </button>
+  </div>
+
+  <!-- Weather Card -->
+  <mat-card *ngIf="weatherData" class="weather-info">
+    <h2>{{ weatherData.name }}, {{ weatherData.sys.country }}</h2>
+    <p>
+      {{ weatherData.weather[0].main }} -
+      {{ weatherData.weather[0].description }}
+    </p>
+
+    <ng-lottie
+      [options]="{
+        path: getAnimationPath(weatherData.weather[0].main),
+        autoplay: true,
+        loop: true
+      }"
+      style="width: 120px; height: 120px; margin: 0 auto"
+    ></ng-lottie>
+
+    <h1>{{ weatherData.main.temp }}°C</h1>
+    <div class="weather-details">
+      <span>
+        <mat-icon>water_drop</mat-icon> {{ weatherData.main.humidity }}%</span
+      >
+      <span><mat-icon>air</mat-icon> {{ weatherData.wind.speed }} m/s</span>
+    </div>
+  </mat-card>
+</div>
