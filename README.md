@@ -84,6 +84,6 @@ This project was created as a learning journey into:
 
 ## Author
 
-Made with 💙 by [Your Name]  
+Made with 💙 by Josephine
 > Find me on [LinkedIn](https://www.linkedin.com/in/josephine-closan/) • [GitHub](https://github.com/JoeClos)
 
