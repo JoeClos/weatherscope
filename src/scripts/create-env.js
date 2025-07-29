@@ -11,9 +11,9 @@ export const environment = {
 `;
 
 mkdirSync('./src/environments', { recursive: true });
-writeFileSync('./src/environments/environment.ts', envConfig.trim() + '\n');
+writeFileSync('./src/environments/environment.prod.ts', envConfig.trim() + '\n');
 
-console.log('environment.ts created successfully');
+console.log('environment.prod.ts created successfully');
 console.log('🔍 Netlify environment variables at build time:');
 console.log('API Key:', process.env.openWeatherApiKey);
 console.log('Base URL:', process.env.openWeatherBaseUrl);
