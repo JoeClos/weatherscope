@@ -49,13 +49,11 @@ npm install
 ### Set up environment variables
 Create `src/environments/environment.ts` file with your API keys:
 ```ts
-export const environment = {
-  production: false,
-  openWeatherApiKey: '<YOUR_API_KEY_HERE>',
-  openWeatherGeoUrl: '<YOUR_GEO_URL_HERE>',
-  openWeatherBaseUrl: '<YOUR_BASE_URL_HERE>',
-  openWeatherReverseGeoUrl: '<YOUR_REVERSE_GEO_URL_HERE>',
-};
+
+- `openWeatherApiKey: '<YOUR_API_KEY>'`
+- `openWeatherGeoUrl: '<YOUR_GEO_URL_HERE>'`
+- `openWeatherBaseUrl: '<YOUR_BASE_URL_HERE>'`
+- `openWeatherReverseGeoUrl: '<YOUR_REVERSE_GEO_URL_HERE>'`
 ```
 
 ### Run the app locally
